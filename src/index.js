@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 
 // custom components
 import Week from "./components/week";
+import TmpThing from "./components/tmp_thing";
 
 // create new copmonenet to produce html
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      weeks: [1, 2, 3],
+      weeks: [1, 2, 3, 4, 5, 6, 7],
       selected_week: null
     };
   }
@@ -22,8 +23,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        Yo
-        <Week weeks={this.state.weeks} />
+        <TmpThing things={this.state.weeks} />
       </div>
     );
   }
